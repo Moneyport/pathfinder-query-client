@@ -31,7 +31,7 @@ Test('Converter', converterTest => {
   converterTest.test('convertEnumDomainToE164 should', convertEnumTest => {
     convertEnumTest.test('convert ENUM domain to valid E.164 phone number with leading +', test => {
       const e164Phone = '+15551234567'
-      const enumDomain = `7.6.5.4.3.2.1.5.5.5.1.e164enum.net`
+      const enumDomain = '7.6.5.4.3.2.1.5.5.5.1.e164enum.net'
 
       const converted = Converter.convertEnumDomainToE164(enumDomain)
       test.equal(converted, e164Phone)
